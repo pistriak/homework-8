@@ -3,7 +3,7 @@ package com.geekhub.json.adapter;
 import java.time.LocalDate;
 
 /**
- * Converts object of type java.time.LocalDate to String by using dd/MM/yyyy format
+ * Converts object of type java.time.LocalDate to String by using ISO 8601 format
  */
 public class LocalDateAdapter implements JsonDataAdapter<LocalDate> {
 

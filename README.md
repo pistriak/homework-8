@@ -3,9 +3,9 @@ The Idea
 This time you need to develop simple JSON serializer. You can learn more about JSON here (http://www.json.org/). Our target is to implement simple method that takes Java object as a parameter and converts it to JSON. Java objects may contain nested objects as well as primitive fields, collections, maps etc.
 
 Your main target is to implement JSONObject toJsonObject(Object o) method inside JsonSerializer class. When everything will be done you will be able to launch test by using Test class and get serialized object of type Cat.
-First of all, take a look at class Cat and realize what field types are used there. Look at the org.geekhub.json.adapters package - it contains different adapters that we can use to convert some complex types like Collection, Map, Date and Color to JSON representation. Some of them already implemented. Take a look at @UseDataAdapter annotation and figure out how it is used inside Cat class.
+First of all, take a look at class Cat and realize what field types are used there. Look at the org.geekhub.json.adapters package - it contains different adapters that we can use to convert some complex types like Collection, Map, LocalDate and Color to JSON representation. Some of them already implemented. Take a look at @UseDataAdapter annotation and figure out how it is used inside Cat class.
 
-From that point you have to understand how adapters work. It's time to implement some of them that are not implemented yet. Complete with implementation of LocalDateAdapter and CollectionAdapter. Use ColorAdapter and MapAdapter as example to complete this step. Make sure that DataAdapter returns date by using dd/MM/yyyy format and CollectionAdapter returns JSONArray as a representation of Collection.
+From that point you have to understand how adapters work. It's time to implement some of them that are not implemented yet. Complete with implementation of LocalDateAdapter and CollectionAdapter. Use ColorAdapter and MapAdapter as example to complete this step. Make sure that LocalDataAdapter returns date by usingISO 8601 format and CollectionAdapter returns JSONArray as a representation of Collection.
 
 With all adapters implemented apply them to the corresponding fields in Cat and Paw classes.
 

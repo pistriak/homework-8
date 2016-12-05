@@ -1,6 +1,6 @@
 package com.geekhub.json.adapter;
 
-    import org.json.JSONException;
+import org.json.JSONException;
 
 /**
  * JsonDataAdapter contains instructions how to serialize Java object to Json representation.
